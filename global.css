@@ -153,7 +153,7 @@ body {
 
 .inputsCollection {
     position: relative;
-    top: 300px;
+    top: 200px;
     left: calc(50% - 188px / 2);
     /* border: 1px solid gray; */
     display: flex;
