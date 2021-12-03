@@ -12,14 +12,16 @@ function drop(e) {
     // получаем id несомого элемента
     let idTakenCube = localStorage.getItem("idTakenCube");
 
-    // сохраняем id того элемента, на который положим несомый
+    // берем id того элемента, на который положим несомый
     let currentId = e.target.id;
 
     // меняем картинки местами
     let orig = document.getElementById(idTakenCube);
     orig.src = "./pictures/" + currentId + ".svg";
+    orig.id = currentId;
 
     e.target.src = "./pictures/" + idTakenCube + ".svg";
+    e.target.id = idTakenCube;
 }
 
 // value checking implementation
