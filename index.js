@@ -1,7 +1,7 @@
 let resultChecking = { more: "", smaller: "", equals: "" };
 
 document.getElementById("more").onchange = function (e) {
-    if (e.target.value == "1") {
+    if (e.target.value == "42") {
         resultChecking.more = "верно";
     } else {
         resultChecking.more = "не верно";
@@ -9,7 +9,7 @@ document.getElementById("more").onchange = function (e) {
 };
 
 document.getElementById("smaller").onchange = function (e) {
-    if (e.target.value == "2") {
+    if (e.target.value == "37") {
         resultChecking.smaller = "верно";
     } else {
         resultChecking.smaller = "не верно";
@@ -17,7 +17,7 @@ document.getElementById("smaller").onchange = function (e) {
 };
 
 document.getElementById("equals").onchange = function (e) {
-    if (e.target.value == "3") {
+    if (e.target.value == "5") {
         resultChecking.equals = "верно";
     } else {
         resultChecking.equals = "не верно";
