@@ -2,6 +2,7 @@
 
 function dragStart(event) {
     localStorage.setItem("idTakenCube", event.target.id);
+    localStorage.setItem("nameCube", event.target.dataset.name);
 }
 
 function allowDrop(event) {
@@ -9,19 +10,23 @@ function allowDrop(event) {
 }
 
 function drop(e) {
-    // получаем id несомого элемента
+    // получаем id и имя несомого элемента
     let idTakenCube = localStorage.getItem("idTakenCube");
+    let nameCube = localStorage.getItem("nameCube");
 
     // берем id того элемента, на который положим несомый
     let currentId = e.target.id;
+    let currentName = e.target.dataset.name;
 
     // меняем картинки местами
     let orig = document.getElementById(idTakenCube);
-    orig.src = "./pictures/" + currentId + ".svg";
+    orig.src = "./pictures/" + currentName + ".svg";
     orig.id = currentId;
+    orig.setAttribute("data-name", currentName);
 
-    e.target.src = "./pictures/" + idTakenCube + ".svg";
+    e.target.src = "./pictures/" + nameCube + ".svg";
     e.target.id = idTakenCube;
+    e.target.setAttribute("data-name", nameCube);
 }
 
 // value checking implementation
