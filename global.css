@@ -60,6 +60,28 @@ body {
     color: #2f2f2f;
 }
 
+.submit input {
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #369cb7;
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+    height: 40px;
+    background: #369cb7;
+    border: 0.5px solid #369cb7;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 47px;
+    margin-left: 505px;
+    margin-top: 10px;
+}
+
 .subtitle {
     position: relative;
     top: 25px;
