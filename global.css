@@ -129,9 +129,17 @@ body {
     height: 189.43px;
     /* left: 222.13px; */
     /* top: 0px; */
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
     border: 1px solid pink;
 }
+
+.columnDice div {
+    margin: -10px 0;
+}
+
+/* #firstСolumn {
+    margin-left: 70px;
+} */
 
 .betweenWarehouses {
     position: relative;
