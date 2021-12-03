@@ -133,6 +133,13 @@ body {
     border: 1px solid pink;
 }
 
+.betweenWarehouses {
+    position: relative;
+    width: 20px;
+    height: 5px;
+    background: #2f2f2f;
+}
+
 .rightWarehouse {
     position: relative;
     width: 224px;
