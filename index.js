@@ -1,3 +1,5 @@
+// value checking implementation
+
 let resultChecking = { more: "", smaller: "", equals: "" };
 
 document.getElementById("more").onchange = function (e) {
