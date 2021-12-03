@@ -127,6 +127,7 @@ body {
     position: relative;
     width: 222.36px;
     height: 189.43px;
+    display: flex;
     /* left: 222.13px; */
     /* top: 0px; */
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
@@ -134,8 +135,12 @@ body {
 }
 
 .columnDice div {
-    margin: -10px 0;
+    margin: -10.7px 0;
     cursor: grab;
+}
+
+.columnDice {
+    margin-right: 6.7px;
 }
 
 /* #firstСolumn {
