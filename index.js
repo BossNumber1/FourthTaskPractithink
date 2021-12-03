@@ -1,3 +1,27 @@
+// drag and drop implementation
+
+function dragStart(event) {
+    localStorage.setItem("idTakenCube", event.target.id);
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(e) {
+    // получаем id несомого элемента
+    let idTakenCube = localStorage.getItem("idTakenCube");
+
+    // сохраняем id того элемента, на который положим несомый
+    let currentId = e.target.id;
+
+    // меняем картинки местами
+    let orig = document.getElementById(idTakenCube);
+    orig.src = "./pictures/" + currentId + ".svg";
+
+    e.target.src = "./pictures/" + idTakenCube + ".svg";
+}
+
 // value checking implementation
 
 let resultChecking = { more: "", smaller: "", equals: "" };

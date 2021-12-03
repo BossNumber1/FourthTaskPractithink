@@ -22,8 +22,18 @@
                 <div class="cubes">
                     <div class="leftWarehouse">
                         <div class="columnDice" id="firstСolumn">
-                            <div style="z-index: 10">
-                                <img src="./pictures/cube.svg" alt="cube" />
+                            <div
+                                style="z-index: 10"
+                                ondrop="drop(event)"
+                                ondragover="allowDrop(event)"
+                                ondragstart="dragStart(event)"
+                            >
+                                <img
+                                    src="./pictures/cube.svg"
+                                    alt="cube"
+                                    ondragstart="dragStart(event)"
+                                    id="cube"
+                                />
                             </div>
                             <div style="z-index: 9">
                                 <img src="./pictures/cube.svg" alt="cube" />
@@ -150,10 +160,17 @@
                             </div>
                         </div>
                         <div class="columnDice" id="fifthСolumn">
-                            <div style="z-index: 10">
+                            <div
+                                style="z-index: 10"
+                                ondrop="drop(event)"
+                                ondragover="allowDrop(event)"
+                                ondragstart="dragStart(event)"
+                            >
                                 <img
                                     src="./pictures/transparentCube.svg"
                                     alt="transparentCube"
+                                    ondragstart="dragStart(event)"
+                                    id="transparentCube"
                                 />
                             </div>
                             <div style="z-index: 9">
@@ -208,7 +225,7 @@
                     </div>
                     <div class="betweenWarehouses"></div>
                     <div class="rightWarehouse">
-                        <div class="columnDice" id="firstСolumn">
+                        <div class="columnDice" id="firstСolumn2">
                             <div style="z-index: 10">
                                 <img
                                     src="./pictures/purpleCube.svg"
@@ -270,7 +287,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="columnDice" id="secondСolumn">
+                        <div class="columnDice" id="secondСolumn2">
                             <div style="z-index: 10">
                                 <img
                                     src="./pictures/purpleCube.svg"
@@ -332,7 +349,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="columnDice" id="thirdСolumn">
+                        <div class="columnDice" id="thirdСolumn2">
                             <div style="z-index: 10">
                                 <img
                                     src="./pictures/purpleCube.svg"
@@ -394,7 +411,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="columnDice" id="fourthСolumn">
+                        <div class="columnDice" id="fourthСolumn2">
                             <div style="z-index: 10">
                                 <img
                                     src="./pictures/transparentCube.svg"
@@ -456,7 +473,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="columnDice" id="fifthСolumn">
+                        <div class="columnDice" id="fifthСolumn2">
                             <div style="z-index: 10">
                                 <img
                                     src="./pictures/transparentCube.svg"
