@@ -71,23 +71,23 @@ body {
 
 .imgSubtitle {
     position: relative;
-    left: 0%;
-    right: 89.24%;
-    top: 0%;
-    bottom: 0%;
-    flex: none;
+    /* left: 0%; */
+    /* right: 89.24%; */
+    /* top: 0%; */
+    /* bottom: 0%; */
+    /* flex: none;
     order: 0;
-    flex-grow: 0;
+    flex-grow: 0; */
     margin: 0px 10px;
 }
 
 .subtitleText {
-    left: 15.25%;
+    /* left: 15.25%;
     right: 0%;
     top: 0%;
-    bottom: 0%;
+    bottom: 0%; */
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
