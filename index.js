@@ -1,3 +1,13 @@
+// const elementi = document.querySelectorAll(
+//     ".columnDice > div > img:not[alt='transparentCube']"
+// );
+
+// for (let i = 0; i < elementi.length; i++) {
+//     // elementi[i];
+
+//     console.log("els =", elementi[i]);
+// }
+
 // drag and drop implementation
 
 function dragStart(event) {
@@ -23,10 +33,12 @@ function drop(e) {
     orig.src = "./pictures/" + currentName + ".svg";
     orig.id = currentId;
     orig.setAttribute("data-name", currentName);
+    orig.parentElement.style.cursor = "default";
 
     e.target.src = "./pictures/" + nameCube + ".svg";
     e.target.id = idTakenCube;
     e.target.setAttribute("data-name", nameCube);
+    e.target.parentElement.style.cursor = "grab";
 }
 
 // value checking implementation
