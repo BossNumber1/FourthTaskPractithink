@@ -1,13 +1,3 @@
-// const elementi = document.querySelectorAll(
-//     ".columnDice > div > img:not[alt='transparentCube']"
-// );
-
-// for (let i = 0; i < elementi.length; i++) {
-//     // elementi[i];
-
-//     console.log("els =", elementi[i]);
-// }
-
 // drag and drop implementation
 
 function dragStart(event) {
